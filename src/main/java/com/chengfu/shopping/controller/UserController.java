@@ -44,7 +44,7 @@ public class UserController extends BasicController{
 			req.getSession().setAttribute(USER_LOGIN, user);
 
 			//重定向到shopping页面
-			resp.sendRedirect(req.getContextPath() + "/shopping");
+			resp.sendRedirect(req.getContextPath() + "/shopping.html");
 
 		}else {
 			//登录失败，重定向到login登录页面
