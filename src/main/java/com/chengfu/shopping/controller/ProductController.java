@@ -30,7 +30,7 @@ public class ProductController extends HttpServlet {
 		int quantity = Integer.parseInt(req.getParameter("product1") != null ? req.getParameter("product1") : req.getParameter("product2"));
 
 		// 根据商品类型计算价格
-		int pricePerUnit = "productDetail".equals(sourcePage) ? 50 : 100;
+		int pricePerUnit = "productDetail1".equals(sourcePage) ? 50 : 100;
 		int totalPrice = pricePerUnit * quantity;
 
 		// 将结果传递到前端
